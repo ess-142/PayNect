@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paynect | Make Payment</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1>💳 Paynect</h1>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li><a href="/transactions">Transactions</a></li>
+      <li><a href="/settings">Settings</a></li>
+      <li><a href="/payments" class="active">Make Payment</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="form-section">
+      <h2>💸 Make a Payment</h2>
+      <form id="paymentForm">
+        <input type="text" id="payer" placeholder="Payer Name" required>
+        <input type="number" id="amount" placeholder="Amount (KES)" required>
+        <button type="submit">Send Payment</button>
+      </form>
+      <p id="response"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Paynect. Designed by EssTech LTD.</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paynect | Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1>💳 Paynect</h1>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/dashboard" class="active">Dashboard</a></li>
+      <li><a href="/transactions">Transactions</a></li>
+      <li><a href="/settings">Settings</a></li>
+      <li><a href="/payments">Make Payment</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="dashboard-section">
+      <h2>📊 Dashboard Overview</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Total Payments</h3>
+          <p id="totalPayments">--</p>
+        </div>
+        <div class="card">
+          <h3>Total Amount</h3>
+          <p id="totalAmount">--</p>
+        </div>
+      </div>
+
+      <h3>Recent Transactions</h3>
+      <table id="transactionsTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Payer</th>
+            <th>Amount (KES)</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be populated by app.js -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Paynect. Designed by EssTech LTD.</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
